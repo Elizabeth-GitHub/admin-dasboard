@@ -46,17 +46,32 @@ li {
     background-image: url('images/crownIcon.png');
     background-repeat: no-repeat;
     background-size: 100% auto; 
-    /*margin-top: 0.2em; */
     margin-left: auto;
     margin-right: 10%;
 }
 
-/*#sidebarheader-container::before {
-    content: url('images/crownIcon.png');
-}*/
+#white-container {
+    grid-template-rows: 2;
+}
+
+#uppercentral-container {
+    grid-row: 1;
+    grid-template-columns: 1.5fr 1fr;
+}
+
+#search-container {
+    grid-column: 1;
+}
+
+#search {
+    appearance: none;
+    -webkit-appearance: none;
+    outline: none;
+    border-radius: 4%;
+}
 
 #header-container {
-    grid-area: 1 / 2 / 2 / 3;
+    grid-row: 2;
 }
 
 #maincontent-container {
