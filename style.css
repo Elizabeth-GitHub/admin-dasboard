@@ -64,6 +64,7 @@ li {
 
 #search-container{
     position: relative;
+    border: 1px solid pink;
 }
 
 #search {
@@ -92,7 +93,7 @@ li {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: absolute;
-    right: -10%;
+    right: -40%;
 }
 
 #loggedaccount-container {
@@ -116,6 +117,23 @@ li {
 
 #header-container {
     grid-row: 2;
+    position: relative;
+    margin-left: 10%;
+    border: 2px solid red;
+}
+
+#header-container::before {
+    content: '';
+    height: 100%; 
+    aspect-ratio: 1 / 1;
+    border: 1px solid black;
+    background-image: url('images/ava.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    margin-right: 10%;
+    position: absolute;
+    left: -10%;
+
 }
 
 #maincontent-container {
