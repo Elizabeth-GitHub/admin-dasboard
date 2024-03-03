@@ -84,6 +84,17 @@ li {
     position: absolute;
 }
 
+#search-container::after {
+    content: '';
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url('images/notificationIcon.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    right: -10%;
+}
+
 #loggedaccount-container {
     border: 1px solid black;
     position: relative;
