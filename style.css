@@ -19,6 +19,11 @@ li {
 
 .top-container {
    padding-top: 2vh;
+   padding-left: 2vh;
+}
+
+.header {
+    padding-left: 20%;
 }
 
 #main-container {
@@ -31,7 +36,6 @@ li {
     grid-column: 1;
     grid-template-rows: 10% 35% 55%;
     background-color: var(--blue);
-    padding-left: 5%;
 }
 
 #sidebarheader-container {
@@ -55,12 +59,12 @@ li {
 #right-container {
     grid-column: 2;
     grid-template-rows: 1fr 5fr;
-    padding-left: 5%;
 }
 
 #white-container {
     grid-column: 1;
     grid-template-rows: 2;
+    padding-left: 2vh;
 }
 
 #uppercentral-container {
@@ -128,8 +132,9 @@ li {
 #header-container {
     grid-row: 2;
     position: relative;
-    margin-left: 10%;
     border: 2px solid red;
+    width: 37%;
+    justify-items: start;
 }
 
 #header-container::before {
@@ -142,7 +147,7 @@ li {
     background-size: 100% 100%; 
     margin-right: 10%;
     position: absolute;
-    left: -10%;
+    left: 0;
 
 }
 
