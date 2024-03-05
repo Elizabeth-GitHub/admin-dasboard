@@ -1,6 +1,13 @@
 :root {
-    --blue: #38bdf8;
-    --grey: #e2e8f0;
+    --lightgray: #F5F5F5;
+    --darkcharcoal: #333333;
+    --mutedgreen: #6EB69C;
+    --lightgray: #CCCCCC;
+    --offwhite: #FAF9F6;
+    --softcream: #FFF8E7;
+    --darkgray: #333333;
+    --softgreen: #98FB98;
+    --lightpink: #FFCCCC;
 }
 
 * {
@@ -19,11 +26,19 @@ li {
 
 .top-container {
    padding-top: 2vh;
-   padding-left: 2vh;
+}
+
+.sidebar-text li {
+    color: var(--darkcharcoal);
 }
 
 .header {
     padding-left: 20%;
+    color: var(--darkgray)
+}
+
+#sidebar-header {
+    color: var(--mutedgreen);
 }
 
 #main-container {
@@ -35,13 +50,13 @@ li {
 #sidebar-container {
     grid-column: 1;
     grid-template-rows: 10% 35% 55%;
-    background-color: var(--blue);
+    background-color: var(--lightgray);
+    padding-left: 2vh;
 }
 
 #sidebarheader-container {
     align-items: center;
     justify-items: center;
-    border: solid 1px black;
     position: relative;
 }
 
@@ -64,6 +79,8 @@ li {
 #white-container {
     grid-column: 1;
     grid-template-rows: 2;
+    padding-left: 4vh;
+    background-color: var(--offwhite);
     padding-left: 2vh;
 }
 
@@ -78,7 +95,6 @@ li {
 
 #search-container{
     position: relative;
-    border: 1px solid pink;
 }
 
 #search {
@@ -87,6 +103,7 @@ li {
     outline: none;
     border-radius: 4%;
     margin-left: 10%;
+    background-color: var(--lightgrey);
 }
 
 #search-container::before {
@@ -111,7 +128,6 @@ li {
 }
 
 #loggedaccount-container {
-    border: 1px solid black;
     position: relative;
     margin-left: auto;
 }
@@ -120,7 +136,6 @@ li {
     content: '';
     height: 100%; 
     aspect-ratio: 1 / 1;
-    border: 1px solid black;
     background-image: url('images/ava.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%; 
@@ -132,7 +147,6 @@ li {
 #header-container {
     grid-row: 2;
     position: relative;
-    border: 2px solid red;
     width: 37%;
     justify-items: start;
 }
@@ -141,7 +155,6 @@ li {
     content: '';
     height: 100%; 
     aspect-ratio: 1 / 1;
-    border: 1px solid black;
     background-image: url('images/ava.jpg');
     background-repeat: no-repeat;
     background-size: 100% 100%; 
@@ -153,8 +166,9 @@ li {
 
 #maincontent-container {
     grid-row: 2;
-    background-color: var(--grey);
+    background-color: var(--softcream);
     grid-template-columns: 3fr 1fr;
+    padding-left: 2vh;
 }
 
 #maincontentright-container {
@@ -170,5 +184,15 @@ li {
 #projects-container {
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
 }
+
+#projects-container li {
+    background-color: var(--softgreen);
+}
+
+#maincontentright-container div {
+    background-color: var(--lightpink);
+}
+
+
 
 
