@@ -7,4 +7,5 @@ The [design reference file](./design.png) was obtained from The Odin Project.
 - <a href="https://www.flaticon.com/free-icons/search" title="search icons">Search icons created by Catalin Fertu - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/notification" title="notification icons">Notification icons created by Freepik - Flaticon</a>
 - <a href="https://www.flaticon.com/free-icons/dashboard" title="dashboard icons">Dashboard icons created by Pixel perfect - Flaticon</a>
-- The icons colour was modified using <a href="https://www.adobe.com/express/">Adobe Express<a>
+- <a href="https://www.flaticon.com/free-icons/home-button" title="home button icons">Home button icons created by Freepik - Flaticon</a>
+- The icons colours was modified using <a href="https://www.adobe.com/express/">Adobe Express<a>
