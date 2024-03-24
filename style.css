@@ -55,6 +55,7 @@ li {
     background-repeat: no-repeat;
     background-size: 100% 80%; 
     background-position: center top 3vh;
+    cursor: pointer;
 }
 
 #sidebar-header {
