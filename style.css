@@ -24,7 +24,6 @@ html, body {
 
 h2 {
     padding-bottom: 1.3vh;
-    border: 2px solid red;
 }
 
 li {
@@ -43,7 +42,6 @@ li {
 .bold-text {
     font-size: 2vh;
     font-weight: 600;
-    
 }
 
 .sidebar-text li {
@@ -142,7 +140,6 @@ li {
 #search {
     appearance: none;
     -webkit-appearance: none;
-    /*outline: none;*/
     border-radius: 5%;
     margin-left: 4%;
     background-color: var(--softcream);
@@ -168,14 +165,13 @@ li {
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: absolute;
-    right: -15vw;
+    right: -16vw;
 }
 
 #loggedaccount-container {
     position: relative;
     margin-left: auto;
     align-items: center;
-    border: 1px solid pink
 }
 
 #loggedaccount-container::before {
@@ -187,19 +183,22 @@ li {
     background-size: 100% 100%; 
     margin-right: 10%;
     position: absolute;
-    left: -4vw;
+    left: -3vw;
 }
 
-#header-container {
+#greetings-container {
     grid-row: 2;
     position: relative;
-    width: 37%;
+    width: 30vw;
+    height: 5vh;
     justify-items: start;
+    align-items: center;
+    margin-top: 3.5vh;;
 }
 
-#header-container::before {
+#greetings-container::before {
     content: '';
-    height: 100%; 
+    height: 200%; 
     aspect-ratio: 1 / 1;
     background-image: url('images/ava.png');
     background-repeat: no-repeat;
