@@ -30,6 +30,12 @@ li {
     list-style: none;
 }
 
+button {
+    height: 3vh;
+    border-radius: 50px;
+    width: 9vh;
+}
+
 .container {
     display: grid;
 }
@@ -123,7 +129,7 @@ li {
     padding-bottom: 1vh;
 }
 
-#uppercentral-container {
+#upperwhite-container {
     grid-row: 1;
     grid-template-columns: 1.5fr 1fr;
     height: 2vh;
@@ -186,8 +192,13 @@ li {
     left: -3vw;
 }
 
-#greetings-container {
+#lowerwhite-container {
     grid-row: 2;
+    grid-template-columns: 1.3fr 1fr;
+}
+
+#greetings-container {
+    grid-column: 1;
     position: relative;
     width: 30vw;
     height: 5vh;
@@ -206,7 +217,13 @@ li {
     margin-right: 10%;
     position: absolute;
     left: 0;
+}
 
+#buttons-container {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2.5vh;
+    align-items: center;
+    margin-left: auto;
 }
 
 #maincontent-container {
