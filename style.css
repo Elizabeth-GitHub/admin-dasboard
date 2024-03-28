@@ -1,15 +1,14 @@
 :root {
-    --lightgray: #F5F5F5;
     --darkcharcoal: #333333;
-    --mutedgreen: #6EB69C;
     --lightgray: #CCCCCC;
     --offwhite: #FAF9F6;
     --softcream: #FFF7E5;
-    --softgreen: #98FB98;
     --lightpeach: #FFE5B4;
     --softgray: #666666;
     --blanchedalmond: #FFEDCC;
     --peachsnow: #E8CDAF;
+    --softbeige: #FFFFCC;
+    --icedalmond: #FEF6E1;
 }
 
 * {
@@ -31,9 +30,16 @@ li {
 }
 
 button {
+    appearance: none;
+    -webkit-appearance: none;
     height: 3vh;
     border-radius: 50px;
     width: 9vh;
+    text-align: center;
+    background-color: var(--lightpeach);
+    border: 1px solid var(--blanchedalmond);
+    font-size: 1.4vh;
+    cursor: pointer;
 }
 
 .container {
@@ -149,7 +155,7 @@ button {
     border-radius: 5%;
     margin-left: 4%;
     background-color: var(--softcream);
-    border-color: var(--softcream);
+    border-color: var(--icedalmond);
     border-style: solid;
 }
 
