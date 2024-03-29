@@ -257,6 +257,7 @@ button {
 #projects-container ul {
     grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     gap: 2vh;
+    margin-bottom: 2vh;
 }
 
 #projects-container ul li {
@@ -287,6 +288,10 @@ button {
 
 #recipes {
     background-image: url('./images/recipesScreenshot.png');
+}
+
+#morebutton-container {
+    margin-left: auto;
 }
 
 #maincontentright-container div {
