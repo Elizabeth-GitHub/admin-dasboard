@@ -9,6 +9,7 @@
     --peachsnow: #E8CDAF;
     --softbeige: #FFFFCC;
     --icedalmond: #FEF6E1;
+    --wildsand: #F2F0EC;
 }
 
 * {
@@ -42,6 +43,15 @@ button {
     cursor: pointer;
 }
 
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+}
+
 .container {
     display: grid;
 }
@@ -70,6 +80,10 @@ button {
     background-size: 100% 80%; 
     background-position: center top 3vh;
     cursor: pointer;
+}
+
+.footer-link, .footer-link:visited {
+    font-weight: 600;
 }
 
 #sidebar-header {
@@ -242,7 +256,6 @@ button {
     padding-right: 3vh;
     justify-content: end;
     align-items: baseline;
-    border: 1px black solid;
 }
 
 #maincontentright-container {
@@ -296,6 +309,38 @@ button {
 
 #maincontentright-container div {
     background-color: var(--lightpeach);
+}
+
+#footer {
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: 1vh;
+    font-size: smaller;
+}
+
+#footer p {
+    justify-self: center;
+}
+
+#credits-details {
+    display: none;
+    position: absolute;
+    background-color: var(--offwhite);
+    padding: 1%;
+    border: 1px solid var(--wildsand);
+    border-radius: 5px;
+    justify-self: center;
+    bottom: 0;
+    font-size: medium;
+}
+
+#credits:hover + #credits-details,
+#credits-details:hover {
+    display: block;
+}
+
+#credits-container {
+    position: relative;
 }
 
 

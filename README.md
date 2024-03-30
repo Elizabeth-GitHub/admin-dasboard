@@ -4,8 +4,8 @@ This repository contains the source code and assets for my Admin Dashboard proje
 The [design reference file](./design.png) was obtained from The Odin Project.
 
 # Credits
-- <a href="https://www.flaticon.com/free-icons/search" title="search icons">Search icons created by Catalin Fertu - Flaticon</a>
-- <a href="https://www.flaticon.com/free-icons/notification" title="notification icons">Notification icons created by Freepik - Flaticon</a>
-- <a href="https://www.flaticon.com/free-icons/dashboard" title="dashboard icons">Dashboard icons created by Pixel perfect - Flaticon</a>
-- <a href="https://www.flaticon.com/free-icons/home-button" title="home button icons">Home button icons created by Freepik - Flaticon</a>
+- Search icons created by <a href="https://www.flaticon.com/free-icons/search" title="search icons">Catalin Fertu - Flaticon</a>
+- Notification icons created by <a href="https://www.flaticon.com/free-icons/notification" title="notification icons">Freepik - Flaticon</a>
+- Dashboard icons created by <a href="https://www.flaticon.com/free-icons/dashboard" title="dashboard icons">Pixel perfect - Flaticon</a>
+- Home button icons created by <a href="https://www.flaticon.com/free-icons/home-button" title="home button icons">Freepik - Flaticon</a>
 - The icons colours was modified using <a href="https://www.adobe.com/express/">Adobe Express<a>
