@@ -9,3 +9,4 @@ The [design reference file](./design.png) was obtained from The Odin Project.
 - Dashboard icons created by <a href="https://www.flaticon.com/free-icons/dashboard" title="dashboard icons">Pixel perfect - Flaticon</a>
 - Home button icons created by <a href="https://www.flaticon.com/free-icons/home-button" title="home button icons">Freepik - Flaticon</a>
 - The icons colours was modified using <a href="https://www.adobe.com/express/">Adobe Express<a>
+- Content assistance provided by [ChatGPT](chat.openai.com/).
