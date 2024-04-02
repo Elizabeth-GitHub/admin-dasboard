@@ -52,6 +52,11 @@ a:visited {
     color: inherit;
 }
 
+p, span {
+    margin: 0;
+    padding: 0;
+}
+
 .container {
     display: grid;
 }
@@ -297,6 +302,23 @@ a:visited {
     height: 30vh;
 }
 
+.ellipsis-content,
+.ellipsis-toggle input {
+  display: none;
+}
+
+.ellipsis-toggle {
+  cursor: pointer;
+}
+
+
+.ellipsis-toggle input:checked + .ellipsis {
+  display: none;
+}
+.ellipsis-toggle input:checked ~ .ellipsis-content {
+  display: inline;
+}
+
 #calculator {
     background-image: url('./images/calculatorScreenshot.png');
 }
@@ -340,9 +362,14 @@ a:visited {
     grid-template-rows: 1fr 8fr;
 }
 
+#updated-privacypolicy {
+    width: 47ch;
+}
+
 #trendingcontent-container {
     align-items: stretch;
 }
+
 
 #footer {
     grid-row: 2;
