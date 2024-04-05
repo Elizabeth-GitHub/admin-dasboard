@@ -52,11 +52,6 @@ a:visited {
     color: inherit;
 }
 
-p, span {
-    margin: 0;
-    padding: 0;
-}
-
 .container {
     display: grid;
 }
@@ -85,6 +80,23 @@ p, span {
     background-size: 100% 80%; 
     background-position: center top 3vh;
     cursor: pointer;
+}
+
+.ellipsis-content,
+.ellipsis-toggle input {
+  display: none;
+}
+
+.ellipsis-toggle {
+  cursor: pointer;
+}
+
+
+.ellipsis-toggle input:checked + .ellipsis {
+  display: none;
+}
+.ellipsis-toggle input:checked ~ .ellipsis-content {
+  display: inline;
 }
 
 .footer-link, .footer-link:visited {
@@ -137,7 +149,6 @@ p, span {
     background-repeat: no-repeat;
     background-size: 20% 20%; 
     position: absolute;
-    border: 2px magenta solid;
 }
 
 #right-container {
@@ -262,7 +273,6 @@ p, span {
     padding-right: 3vh;
     justify-content: space-between;
     align-items: baseline;
-    border: 1px solid blue;
 }
 
 #maincontentright-container {
@@ -270,7 +280,6 @@ p, span {
     grid-column: 2;
     grid-template-rows: 1fr 1fr;
     align-items: flex-start;
-    border: 1px solid black;
     height: 98%;
 }
 
@@ -279,7 +288,6 @@ p, span {
     grid-column: 1;
     grid-template-rows: 19fr 1fr;
     height: 98%;
-    border: 1px solid red;
 }
 
 #projects-container {
@@ -300,23 +308,6 @@ p, span {
     background-color: var(--blanchedalmond);
     border-left: 10px solid var(--peachsnow);
     height: 30vh;
-}
-
-.ellipsis-content,
-.ellipsis-toggle input {
-  display: none;
-}
-
-.ellipsis-toggle {
-  cursor: pointer;
-}
-
-
-.ellipsis-toggle input:checked + .ellipsis {
-  display: none;
-}
-.ellipsis-toggle input:checked ~ .ellipsis-content {
-  display: inline;
 }
 
 #calculator {
@@ -356,6 +347,24 @@ p, span {
     grid-template-rows: 1fr 8fr;
 }
 
+#announcements-list li {
+    padding-left: 2vh;
+    padding-right: 2vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+}
+
+#announcements-list li:not(:last-child):after{
+    content: '';
+    display: inline-block;
+    height: 1px;
+    width: 100%;
+    margin-top: 1.5vh;
+    background: var(--softgray);
+}
+
+
+
 #trending-container {
     margin-top: auto;
     grid-row: 2;
@@ -378,7 +387,6 @@ p, span {
     margin-top: auto;
     margin-bottom: 1vh;
     font-size: smaller;
-    border: 1px solid green;
 }
 
 #footer p {
