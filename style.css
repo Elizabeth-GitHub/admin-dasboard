@@ -82,23 +82,6 @@ a:visited {
     cursor: pointer;
 }
 
-.ellipsis-content,
-.ellipsis-toggle input {
-  display: none;
-}
-
-.ellipsis-toggle {
-  cursor: pointer;
-}
-
-
-.ellipsis-toggle input:checked + .ellipsis {
-  display: none;
-}
-.ellipsis-toggle input:checked ~ .ellipsis-content {
-  display: inline;
-}
-
 .footer-link, .footer-link:visited {
     font-weight: 600;
 }
@@ -112,6 +95,8 @@ a:visited {
     width: 100%;
     height: 100%;
 }
+
+/*Sidebar*/
 
 #sidebar-container {
     grid-column: 1;
@@ -151,13 +136,15 @@ a:visited {
     position: absolute;
 }
 
+/*Right part*/
+
 #right-container {
     grid-column: 2;
     grid-template-rows: 1fr 5fr;
 }
 
 #white-container {
-    grid-column: 1;
+    grid-row: 1;
     grid-template-rows: 2;
     background-color: var(--offwhite);
     padding-left: 2vh;
@@ -281,6 +268,8 @@ a:visited {
     grid-template-rows: 1fr 1fr;
     align-items: flex-start;
     height: 98%;
+    max-height: 98%;
+    /*border: 2px red solid;*/
 }
 
 #maincontentleft-container {
@@ -288,6 +277,8 @@ a:visited {
     grid-column: 1;
     grid-template-rows: 19fr 1fr;
     height: 98%;
+    max-height: 98%;
+    /*border: 2px blue solid;*/
 }
 
 #projects-container {
@@ -336,10 +327,12 @@ a:visited {
 
 #morebutton-container {
     margin-left: auto;
+    margin-top: auto;
 }
 
-#announcementscontent-container, #trendingcontent-container {
-    background-color: var(--lightpeach);
+#more-button {
+    margin-bottom: 0;
+    padding-bottom: 0;
 }
 
 #announcements-container {
@@ -347,11 +340,37 @@ a:visited {
     grid-template-rows: 1fr 8fr;
 }
 
-#announcements-list li {
-    padding-left: 2vh;
+#announcementscontent-container, #trendingcontent-container {
+    background-color: var(--lightpeach);
+}
+
+#announcementscontent-container {
+    padding-left: 1.5vh;
     padding-right: 2vh;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
+    max-height: 400px;
+    max-width: 500px;
+}
+
+/*#announcements-list li p {
+    display: -webkit-box;
+    min-width: 90%;
+    max-width: 200px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    
+}*/
+
+.truncate {
+    display: -webkit-box;
+    min-width: 90%;
+    max-width: 200px;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    cursor: pointer;
 }
 
 #announcements-list li:not(:last-child):after{
@@ -378,7 +397,6 @@ a:visited {
 #trendingcontent-container {
     align-items: stretch;
 }
-
 
 #footer {
     grid-row: 2;
