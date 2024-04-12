@@ -353,16 +353,6 @@ a:visited {
     max-width: 500px;
 }
 
-/*#announcements-list li p {
-    display: -webkit-box;
-    min-width: 90%;
-    max-width: 200px;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    
-}*/
-
 .truncate {
     display: -webkit-box;
     min-width: 90%;
@@ -373,6 +363,10 @@ a:visited {
     cursor: pointer;
 }
 
+.hide-announcement {
+    visibility: hidden;
+}
+
 #announcements-list li:not(:last-child):after{
     content: '';
     display: inline-block;
@@ -381,8 +375,6 @@ a:visited {
     margin-top: 1.5vh;
     background: var(--softgray);
 }
-
-
 
 #trending-container {
     margin-top: auto;
