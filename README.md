@@ -8,5 +8,6 @@ The [design reference file](./design.png) was obtained from The Odin Project.
 - Notification icons created by <a href="https://www.flaticon.com/free-icons/notification" title="notification icons">Freepik - Flaticon</a>
 - Dashboard icons created by <a href="https://www.flaticon.com/free-icons/dashboard" title="dashboard icons">Pixel perfect - Flaticon</a>
 - Home button icons created by <a href="https://www.flaticon.com/free-icons/home-button" title="home button icons">Freepik - Flaticon</a>
+- Lazy icons created by <a href="https://www.flaticon.com/free-icons/lazy" title="lazy icons"> Smashicons - Flaticon</a>
 - The icons colours was modified using <a href="https://www.adobe.com/express/">Adobe Express<a>
 - Content assistance provided by [ChatGPT](chat.openai.com/).

@@ -101,6 +101,14 @@ a:visited {
     display: none;
 }
 
+.trending-li {
+    position: relative;
+}
+
+.trending-name {
+    margin-left: 4vh;
+}
+
 .footer-link, .footer-link:visited {
     font-weight: 600;
 }
@@ -281,30 +289,16 @@ a:visited {
     align-items: baseline;
 }
 
-#maincontentright-container {
-    grid-row: 1;
-    grid-column: 2;
-    grid-template-rows: 1fr 1fr;
-    align-items: flex-start;
-    height: 98%;
-    max-height: 98%;
-    gap: 2vh;
-}
+/* Left Container */
 
 #maincontentleft-container {
     grid-row: 1;
     grid-column: 1;
     grid-template-rows: 19fr 1fr;
-    height: 98%;
-    max-height: 98%;
 }
 
 #projects-container {
     grid-row: 1;
-}
-
-#morebutton-container {
-    grid-row: 2;
 }
 
 #projects-container ul {
@@ -346,11 +340,22 @@ a:visited {
 #morebutton-container {
     margin-left: auto;
     margin-top: auto;
+    grid-row: 2;
 }
 
 #more-button {
     margin-bottom: 0;
     padding-bottom: 0;
+}
+
+/* Right Container */
+
+#maincontentright-container {
+    grid-row: 1;
+    grid-column: 2;
+    grid-template-rows: 1fr 1fr;
+    align-items: flex-start;
+    gap: 2vh;
 }
 
 #announcements-container {
@@ -382,19 +387,29 @@ a:visited {
 }
 
 #trending-container {
-    /*margin-top: 1vh;*/
     grid-row: 2;
     grid-template-rows: 1fr 8fr;
     height: 30vh;
 }
 
-#updated-privacypolicy {
-    width: 47ch;
+#trendingcontent-container {
+    padding-left: 1.5vh;
+    padding-right: 2vh;
+    padding-top: 2.5vh;
+    padding-bottom: 2.5vh;
 }
 
-#trendingcontent-container {
-    align-items: stretch;
+#tegan::before {
+    content: '';
+    height: 100%;
+    aspect-ratio: 1 / 1;
+    background-image: url('images/capibara.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
 }
+
+/* Footer */
 
 #footer {
     grid-row: 2;
