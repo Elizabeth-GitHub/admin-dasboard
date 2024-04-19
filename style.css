@@ -82,6 +82,25 @@ a:visited {
     cursor: pointer;
 }
 
+.announcement-title {
+    margin-top: 0.4vh;
+    margin-bottom: 0.1vh;
+}
+
+.truncate-announcement {
+    display: -webkit-box;
+    min-width: 90%;
+    max-width: 200px;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.hidden-announcement {
+    display: none;
+}
+
 .footer-link, .footer-link:visited {
     font-weight: 600;
 }
@@ -269,7 +288,7 @@ a:visited {
     align-items: flex-start;
     height: 98%;
     max-height: 98%;
-    /*border: 2px red solid;*/
+    gap: 2vh;
 }
 
 #maincontentleft-container {
@@ -278,7 +297,6 @@ a:visited {
     grid-template-rows: 19fr 1fr;
     height: 98%;
     max-height: 98%;
-    /*border: 2px blue solid;*/
 }
 
 #projects-container {
@@ -349,48 +367,25 @@ a:visited {
     padding-right: 2vh;
     padding-top: 2.5vh;
     padding-bottom: 2.5vh;
-    max-height: 400px;
-    max-width: 500px;
+    height: 30vh;
 }
 
-.truncate-announcement {
-    display: -webkit-box;
-    min-width: 90%;
-    max-width: 200px;
-    -webkit-line-clamp: 4;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-    cursor: pointer;
-}
-
-.main-announcement {
-    display: block;
-    position: absolute;
-    width: 400px;
-    justify-content: center;
-    align-items: start;
-    border: 1px solid green;
-
-}
-
-.hidden-announcement {
-    visibility: hidden;
-}
-
-#announcements-list li:not(:last-child):after{
+#announcements-list li:not(:last-child):after{  /*Dividers*/
     content: '';
     display: inline-block;
     height: 1px;
     width: 100%;
     margin-top: 1.5vh;
+    margin-bottom: 1vh;
     background: var(--softgray);
     visibility: var(--dividerVisibility, visible);
 }
 
 #trending-container {
-    margin-top: auto;
+    /*margin-top: 1vh;*/
     grid-row: 2;
     grid-template-rows: 1fr 8fr;
+    height: 30vh;
 }
 
 #updated-privacypolicy {

@@ -17,7 +17,6 @@ function manageUnclickedAnnouncements(unclickedAnnouncements) {
 
 function manageClickedAnnouncement(clickedAnnouncement) {
     clickedAnnouncement.classList.toggle('truncate-announcement');
-    clickedAnnouncement.classList.toggle('main-announcement');
     
     var allAnnouncements = document.querySelectorAll('.announcement');
     var restAnnouncements = Array.from(allAnnouncements).filter(announcement => announcement !== clickedAnnouncement);
