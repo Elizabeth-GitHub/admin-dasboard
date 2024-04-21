@@ -103,10 +103,12 @@ a:visited {
 
 .trending-li {
     position: relative;
+    margin-bottom: 3vh;
+    align-items: center;
 }
 
 .trending-name {
-    margin-left: 4vh;
+    margin-left: 15%;
 }
 
 .footer-link, .footer-link:visited {
@@ -395,15 +397,46 @@ a:visited {
 #trendingcontent-container {
     padding-left: 1.5vh;
     padding-right: 2vh;
-    padding-top: 2.5vh;
+    padding-top: 3vh;
     padding-bottom: 2.5vh;
+    align-items: center;
 }
 
 #tegan::before {
     content: '';
-    height: 100%;
+    height: 120%;
     aspect-ratio: 1 / 1;
     background-image: url('images/capibara.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+#morgan::before {
+    content: '';
+    height: 120%;
+    aspect-ratio: 1 / 1;
+    background-image: url('images/wolf.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+#kendall::before {
+    content: '';
+    height: 120%;
+    aspect-ratio: 1 / 1;
+    background-image: url('images/puppy.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+}
+
+#alex::before {
+    content: '';
+    height: 120%;
+    aspect-ratio: 1 / 1;
+    background-image: url('images/turtle.png');
     background-repeat: no-repeat;
     background-size: 100% 100%;
     position: absolute;
