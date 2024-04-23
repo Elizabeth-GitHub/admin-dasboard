@@ -70,15 +70,15 @@ a:visited {
     color: var(--darkcharcoal);
     font-size: 1.5vh;
     margin-left: 4vh;
+    border: 1px solid black;
 }    
    
 
 .sidebarli-container {
     height: 1.5vh;
-    
+    position: relative;
+    margin-left: 1vh; 
 }
-
-
 
 .header {
     padding-left: 20%;
@@ -162,10 +162,6 @@ a:visited {
     left: 0;
 }
 
-#sidebaroptions-container li {
-    border: 1px solid black;
-}
-
 #sidebaroptions-container {
     grid-row: 2;
     grid-template-rows: repeat(6, 1fr);
@@ -175,8 +171,6 @@ a:visited {
 
 #home-container {
     grid-row: 1;
-    position: relative;
-    margin-left: 1vh;
 }
 
 #home-container::before {
@@ -190,6 +184,137 @@ a:visited {
     right: 10;
 }
 
+#profile-container {
+    grid-row: 2;
+}
+
+#profile-container::before {
+    content: '';
+    height: 110%;
+    aspect-ratio: 1 / 1;
+    background-image: url('images/profileIcon.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    position: absolute;
+    right: 10;
+}
+
+#messages-container {
+    grid-row: 3;
+}
+
+#messages-container::before {
+    content: '';
+    height: 120%;
+    aspect-ratio: 1 / 1;
+    background-image: url('images/messageIcon.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    position: absolute;
+    right: 10;
+}
+
+#history-container {
+    grid-row: 4;
+}
+
+#history-container::before {
+    content: '';
+    height: 130%;
+    aspect-ratio: 1 / 1;
+    background-image: url('images/historyIcon.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    position: absolute;
+    right: 10;
+}
+
+#tasks-container {
+    grid-row: 5;
+}
+
+#tasks-container::before {
+    content: '';
+    height: 130%;
+    aspect-ratio: 1 / 1;
+    background-image: url('images/tasksIcon.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    position: absolute;
+    right: 10;
+}
+
+#communities-container {
+    grid-row: 6;
+}
+
+#communities-container::before {
+    content: '';
+    height: 160%;
+    aspect-ratio: 1 / 1;
+    background-image: url('images/communityIcon.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    position: absolute;
+    right: 10;
+    align-self: center;
+}
+
+#sidebarsettings-container {
+    grid-row: 3;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2vh;
+    border: 2px solid blue;
+    margin-bottom: auto;;
+}
+
+#settings-container {
+    grid-row: 1;
+}
+
+#settings-container::before {
+    content: '';
+    height: 140%;
+    aspect-ratio: 1 / 1;
+    background-image: url('images/settingsIcon.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    position: absolute;
+    right: 10;
+    align-self: center;
+}
+
+#support-container {
+    grid-row: 2;
+}
+
+#support-container::before {
+    content: '';
+    height: 140%;
+    aspect-ratio: 1 / 1;
+    background-image: url('images/supportIcon.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    position: absolute;
+    right: 10;
+    align-self: center;
+}
+
+#privacy-container {
+    grid-row: 3;
+}
+
+#privacy-container::before {
+    content: '';
+    height: 150%;
+    aspect-ratio: 1 / 1;
+    background-image: url('images/privacyIcon.png');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; 
+    position: absolute;
+    right: 10;
+    align-self: center;
+}
 /*Right part*/
 
 #right-container {
